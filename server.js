@@ -4,14 +4,15 @@ const app = express()
 const cors = require('cors')
 
 const connectDB = require('./config/db')
-const User = require('./models/User')
 const authRoutes = require('./routes/api/auth')
+const userRoutes = require('./routes/api/user')
 
 connectDB()
 app.use(cors())
 app.use(express.json())
 
 app.use('/api/auth', authRoutes)
+app.use('/api/users', userRoutes)
 
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
