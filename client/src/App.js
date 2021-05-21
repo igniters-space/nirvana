@@ -7,14 +7,14 @@ const App = () => {
   const eRef = useRef()
   const pRef = useRef()
   const uRef = useRef()
-  const handleSub = (e) => {
+  const handleSub = async (e) => {
     e.preventDefault()
     const user = {
       username: uRef.current.value,
       email: eRef.current.value,
       password: pRef.current.value,
     }
-    const res = axe.post('/auth/signup', user)
+    const res = await axe.post('/auth/signup', user)
     console.log(res.data)
   }
   return (
