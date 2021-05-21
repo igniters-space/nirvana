@@ -11,10 +11,6 @@ connectDB()
 app.use(cors())
 app.use(express.json())
 
-app.get('/', async (_, res) => {
-  res.send('working')
-})
-
 app.use('/api/auth', authRoutes)
 
 if (process.env.NODE_ENV === 'production') {
