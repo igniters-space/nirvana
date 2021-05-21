@@ -7,23 +7,23 @@ module.exports = (req, res, next) => {
   // check if no token
   if (!authorization) {
     return res.status(401).json({
-      msg: 'no token authorization denied',
+      err: 'no token authorization denied',
     })
   }
   const token = authorization.split(' ')[1]
   if (!token) {
     return res.status(401).json({
-      msg: 'no token authorization denied',
+      err: 'no token authorization denied',
     })
   }
   // verify the token
   try {
-    const decoded = jwt.verify(token, process.env.JWT_TOKEN)
+    const decoded = jwt.verify(token, process.env.JWT_SECRET)
     req.userId = decoded.user
     next()
   } catch (err) {
     return res.status(401).json({
-      msg: 'invalid token',
+      err: 'invalid token',
     })
   }
 }
