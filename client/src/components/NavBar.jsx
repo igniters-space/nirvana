@@ -1,34 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import '../styles/NavBar.css'
 
 const NavBar = () => {
+  const history = useHistory()
+
+  const pushTo = (path) => {
+    history.push(path)
+  }
+
   return (
-    <header style={{ background: 'lightgray', height: '7vh' }}>
-      <nav
-        style={{
-          width: '90%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-around',
-          height: '100%',
-        }}
-      >
-        <h1>
-          <Link to="/">LOGO</Link>
-        </h1>
-        <ul
-          style={{
-            display: 'flex',
-            listStyleType: 'none',
-            width: '10%',
-            justifyContent: 'space-between',
-          }}
-        >
-          <li>
-            <Link to="/signup">SignUp</Link>
+    <header className="navbar">
+      <nav className="navbar__container">
+        <h1 onClick={() => pushTo('/')}>NIRVANA</h1>
+        <ul className="navbar__links">
+          <li className="navbar__link" onClick={() => pushTo('/signup')}>
+            SingUp
           </li>
-          <li>
-            <Link to="/login">Login</Link>
+          <li className="navbar__link" onClick={() => pushTo('/login')}>
+            Login
           </li>
         </ul>
       </nav>

@@ -1,0 +1,33 @@
+.navbar {
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(243, 243, 243);
+}
+
+.navbar__container {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navbar__container > h1 {
+  cursor: pointer;
+}
+
+.navbar__links {
+  display: flex;
+  list-style-type: none;
+}
+.navbar__link {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+}
+
+.navbar__link:hover {
+  background-color: rgb(235, 235, 235);
+}

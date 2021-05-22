@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import axe from '../utils/api'
+import { useAuth } from '../state/authState'
 
 const Login = () => {
+  const login = useAuth((s) => s.login)
   const [data, setData] = useState({
     email: 'sairaj2119@gmail.com',
     password: 'asdfaa',
@@ -9,12 +10,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault()
-    try {
-      const res = await axe.post('/auth/login', data)
-      localStorage.setItem('token', res.data.token)
-    } catch (err) {
-      localStorage.removeItem('token')
-    }
+    login(data)
     console.log(data)
   }
   const handleChange = (e) => {
