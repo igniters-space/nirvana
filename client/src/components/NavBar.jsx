@@ -15,7 +15,7 @@ const NavBar = () => {
         <h1 onClick={() => pushTo('/')}>NIRVANA</h1>
         <ul className="navbar__links">
           <li className="navbar__link" onClick={() => pushTo('/signup')}>
-            SingUp
+            SignUp
           </li>
           <li className="navbar__link" onClick={() => pushTo('/login')}>
             Login
