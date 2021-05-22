@@ -1,40 +1,36 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import axe from './utils/api'
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import { getUserData, useAuth } from './state/authState'
 
 const App = () => {
-  const [user, setUser] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
+  const setAuthUser = useAuth((s) => s.setAuthUser)
+  const setIsAuthenticated = useAuth((s) => s.setIsAuthenticated)
 
   useEffect(() => {
     ;(async () => {
-      const token = localStorage.getItem('token')
-      if (token) {
-        axe.defaults.headers.common = {
-          Authorization: `Bearer ${token}`,
+      try {
+        const user = await getUserData()
+        console.log(user)
+        if (user) {
+          setAuthUser(user)
+          setIsAuthenticated(true)
+        } else {
+          setIsAuthenticated(false)
         }
-
-        try {
-          const res = await axe.get('/users/authuser')
-          setUser(res.data)
-        } catch (err) {
-          setUser(null)
-          localStorage.removeItem('token')
-        }
-        setIsLoading(false)
-      } else {
-        setIsLoading(false)
+      } catch (error) {
+        setIsAuthenticated(false)
+        console.log(error)
       }
+      setIsLoading(false)
     })()
-  }, [])
-
-  console.log(user)
+  }, [setAuthUser, setIsAuthenticated])
 
   if (isLoading) return <h1>Loading...</h1>
 
