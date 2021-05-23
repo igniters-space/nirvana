@@ -1,26 +1,24 @@
-.jar > h1{
-	text-align: center;
+.jar > h1 {
+  text-align: center;
 }
 
-.jar__row{
+.jar__row {
   width: 100%;
   margin: 10px 0;
   display: grid;
 }
 
-.jar__row > img
-{
+.jar__row > img {
   height: 50%;
   margin: 20px;
-  place-self:center;
+  place-self: center;
 }
 
-.jar__column1{
-	grid-column-start: 1;
- 	grid-column-end: 6;
+.jar__column1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
 }
-.jar__column2{
-	grid-column-start: 7;
-  	grid-column-end: 12;
+.jar__column2 {
+  grid-column-start: 7;
+  grid-column-end: 12;
 }
-
