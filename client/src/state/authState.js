@@ -6,6 +6,7 @@ const login = async (data) => {
     const res = await axe.post('/auth/login', data)
     localStorage.setItem('token', res.data.token)
     const user = await getUserData()
+    console.log('the user is ', user)
     return user
   } catch (err) {
     localStorage.removeItem('token')

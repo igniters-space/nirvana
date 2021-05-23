@@ -15,6 +15,8 @@ const NavBar = () => {
     history.push(path)
   }
 
+  console.log(authUser)
+
   const handleLogout = () => {
     localStorage.removeItem('token')
     setAuthUser(null)
