@@ -12,7 +12,7 @@ const SignUp = () => {
   const setIsAuthenticated = useAuth((s) => s.setIsAuthenticated)
 
   useEffect(() => {
-    if (authUser) history.push('/dash')
+    if (authUser) history.push('/todos')
   }, [authUser, history])
 
   const [data, setData] = useState({

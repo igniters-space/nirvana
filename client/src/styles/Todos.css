@@ -1,0 +1,75 @@
+.todo {
+  width: 100%;
+  display: flex;
+}
+
+.todo__left {
+  flex: 0.3;
+  padding: 1rem;
+}
+
+.todo__right {
+  flex: 0.7;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.todoForm__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoForm__container > form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoForm__container .todoForm__group {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.todoForm__group > label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+}
+
+.todoForm__group > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1rem;
+}
+
+.todoForm__group > input:focus {
+  background-color: rgb(236, 236, 255);
+}
+
+.todoForm__container .todoForm__submit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.todoForm__container .todoForm__submit > button {
+  border: none;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  background-color: rgb(23, 23, 90);
+  color: whitesmoke;
+}
+
+.todoForm__container .todoForm__submit > button:hover {
+  background-color: rgb(36, 36, 118);
+}

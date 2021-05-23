@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import JarOfEmotions from './pages/JarOfEmotions'
 import { getUserData, useAuth } from './state/authState'
+import Todos from './pages/Todos'
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
         <Route path="/main" component={JarOfEmotions} />
+        <Route path="/todos" component={Todos} />
       </Switch>
     </BrowserRouter>
   )
