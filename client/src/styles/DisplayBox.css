@@ -1,14 +1,12 @@
-.imgOrder1{
-order:1;
+.imgOrder1 {
+  order: 1;
 }
-.imgOrder2{
-order:2;
+.imgOrder2 {
+  order: 2;
 }
-.contentOrder1
-{
-	order:1;
+.contentOrder1 {
+  order: 1;
 }
-.contentOrder2
-{
-	order:2;
+.contentOrder2 {
+  order: 2;
 }

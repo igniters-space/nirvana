@@ -16,7 +16,7 @@ const Login = () => {
   })
 
   useEffect(() => {
-    if (authUser) history.push('/dash')
+    if (authUser) history.push('/todos')
   }, [authUser, history])
 
   const handleLogin = async (e) => {

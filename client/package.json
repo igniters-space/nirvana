@@ -37,8 +37,11 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+<<<<<<< HEAD
     },
     "devDependencies": {
         "file-loader": "^6.1.1"
+=======
+>>>>>>> f629dd319e2184dd96b468f3576b6077bcd7effa
     }
 }
