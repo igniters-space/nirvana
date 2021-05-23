@@ -1,0 +1,16 @@
+.Landing {
+    text-align: center;
+    height: 100vh;
+    color: #1D3557;
+    font-size: 1.8rem;
+}
+
+.Landing>img {
+    max-width: 50%;
+    height: auto;
+}
+
+.Landing>h1,
+p {
+    margin: 0;
+}

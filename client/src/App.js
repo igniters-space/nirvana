@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import './App.css'
+// import './App.css'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Login from './pages/Login'
@@ -40,12 +40,12 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/signup" component={SignUp} />
-        <Route path="/login" component={Login} />
-        <Route path="/main" component={JarOfEmotions} />
-        <Route path="/todos" component={Todos} />
-      </Switch>
+        <Route exact path="/" component={Home} />{' '}
+        <Route path="/signup" component={SignUp} />{' '}
+        <Route path="/login" component={Login} />{' '}
+        <Route path="/main" component={JarOfEmotions} />{' '}
+        <Route path="/todos" component={Todos} />{' '}
+      </Switch>{' '}
     </BrowserRouter>
   )
 }
