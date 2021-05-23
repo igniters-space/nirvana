@@ -13,23 +13,23 @@ const customStyles = {
   }
 };
 
-const NoteModal = (showModal, hideModalHandler) => {
+const NoteModal = () => {
   var subtitle;
-  const [modalIsOpen,setIsOpen] = React.useState(false);
+  const [showModal,setshowModal] = React.useState(false);
   function openModal() {
-    setIsOpen(true);
+    setshowModal(true);
   }
 
 
   function closeModal(){
-    setIsOpen(false);
+    setshowModal(false);
   }
 
     return (
       <div>
         <button onClick={openModal}>Add Note</button>
         <Modal
-          isOpen={modalIsOpen}
+          isOpen={showModal}
           onRequestClose={closeModal}
           style={customStyles}
           contentLabel="Example Modal"
