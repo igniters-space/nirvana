@@ -1,0 +1,20 @@
+.container > h2
+{
+	text-align: center;
+}
+
+.container__happiness > h3
+{
+	color: #457B9D;
+	margin-top: 10px;
+}
+.container__sadness > h3
+{
+	color: #E63946;
+	margin-top: 10px;
+}
+.container__todoApp > h3
+{
+	color: #1D3557;
+	margin-top: 10px;
+}
