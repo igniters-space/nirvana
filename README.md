@@ -2,6 +2,8 @@
 
 A gateway to happiness
 
+<img src="client/public/home-cropped.jpg" alt="logo">
+
 ## About Nirvana
 
 - **Nirvana** is a web app aimed to provide happiness and motivation in times of despair and at any time.
@@ -42,7 +44,7 @@ A gateway to happiness
       add-apt-repository ppa:git-core/ppa 
       apt update; apt install git
       ```
-    * Fedora
+<!--     * Fedora
        *  up to Fedora 21
           ```sh
            yum install git
@@ -94,7 +96,7 @@ A gateway to happiness
     * Slitaz
        ```sh
         tazpkg get-install git
-      ```
+      ``` -->
 * Node.js
    * For windows [32 bit version](https://nodejs.org/dist/v16.2.0/node-v16.2.0-x86.msi) 
    * for windows [64 bit version](https://nodejs.org/dist/v16.2.0/node-v16.2.0-x64.msi) 
@@ -225,9 +227,9 @@ We would like to upgrade the to-do app and implement Eisenhower Matrix to boost 
 
 ## Contributors
 
-- [Divyasri][divya]
-- [Rupesh-Darimisetti][rupesh]
-- [Sairaj][sairaj]
+- [Divya Sri Darimisetti][divya]
+- [Rupesh Darimisetti][rupesh]
+- [Chouhan Sairaj][sairaj]
 
 [divya]: https://github.com/irsayvid
 [rupesh]: https://github.com/Rupesh-Darimisetti
