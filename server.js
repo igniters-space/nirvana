@@ -7,6 +7,7 @@ const connectDB = require('./config/db')
 const authRoutes = require('./routes/api/auth')
 const userRoutes = require('./routes/api/user')
 const todoRoutes = require('./routes/api/todo')
+const jarRoutes = require('./routes/api/jar')
 
 connectDB()
 app.use(cors())
@@ -15,6 +16,7 @@ app.use(express.json())
 app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/todos', todoRoutes)
+app.use('/api/jars', jarRoutes)
 
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
