@@ -92,6 +92,7 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Switch>
+
         <div style={{ width: '80%', margin: '1rem auto 0 auto' }}>
           <Route exact path="/" component={Home} />
           <Route path="/signup" component={SignUp} />
@@ -117,9 +118,10 @@ const App = () => {
               inputDescription={inputDescription}
             /> 
           </Route>
+            <Route path="/main" component={JarOfEmotions} />
           </div>
-          <Route path="/main" component={JarOfEmotions} />
-        </div>
+
+
       </Switch>
     </BrowserRouter>
     
