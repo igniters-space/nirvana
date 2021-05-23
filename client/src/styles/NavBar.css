@@ -1,7 +1,8 @@
 .navbar {
   width: 100%;
   height: 7vh;
-  background-color: rgb(243, 243, 243);
+  color:#F1FAEE;
+  background-color: blue;
 }
 
 .navbar__container {
