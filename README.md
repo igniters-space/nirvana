@@ -2,7 +2,7 @@
 
 A gateway to happiness
 
-<img src="client/public/home-cropped.jpg" alt="logo">
+<img src="client/public/home-cropped.png" alt="logo">
 
 ## About Nirvana
 
