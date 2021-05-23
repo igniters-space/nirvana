@@ -11,8 +11,8 @@ const Login = () => {
   const setIsAuthenticated = useAuth((s) => s.setIsAuthenticated)
 
   const [data, setData] = useState({
-    email: 'sairaj2119@gmail.com',
-    password: 'asdfaa',
+    email: '',
+    password: '',
   })
 
   useEffect(() => {
@@ -23,9 +23,6 @@ const Login = () => {
     e.preventDefault()
     setIsLoading(true)
 
-
-
-    
     try {
       const user = await login(data)
       if (user) {
