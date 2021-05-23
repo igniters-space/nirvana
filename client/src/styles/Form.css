@@ -30,6 +30,7 @@
   border: none;
   outline: none;
   padding: 1.25rem 0.5rem;
+  height: 2rem;
   border-bottom: 1px solid gray;
   transform-origin: center;
   font-size: 1rem;

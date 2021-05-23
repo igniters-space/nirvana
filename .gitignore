@@ -3,9 +3,13 @@ node_modules/
 package-lock.json
 client/build
 <<<<<<< HEAD
+client/node_modules
+=======
+<<<<<<< HEAD
 =======
 client/node_modules
 >>>>>>> 162b1d6c3341e7fe5e644c0b0d83df7d9b8f3ea3
+>>>>>>> f629dd319e2184dd96b468f3576b6077bcd7effa
 
 
 

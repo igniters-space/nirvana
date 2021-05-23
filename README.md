@@ -6,7 +6,7 @@ A gateway to happiness
 
 - **Nirvana** is a web app aimed to provide happiness and motivation in times of despair and at any time.
 - It reduces imposter syndrome by providing instances of time you've accomplished something or the tasks you've completed.
-- It lets the user pour their feelings out and reflect on their failures for improvement.
+- It lets you pour your feelings out and reflect on your failures for improvement.
 
 ## Inspiration
 
@@ -15,7 +15,7 @@ A gateway to happiness
 - According to research, few of the ways to overcome imposter syndrome include Getting honest, Focusing on facts (not feelings), Embracing the highlights.
 - Inspired by the jar of emotions and happiness, our aim was to create a solution using these facts.
 
-## Technology Used
+## Technologies Used
 
 - React Js for frontend
 - Node Js for backend
@@ -41,9 +41,9 @@ Please follow the following to run the application
 
 4. Go to the location **./client/** and run application by running **npm start** command or **yarn start** command
 
-5. Build the project
+5. The web app opens in port 3000 
 
-6. Run and enjoy :)
+6. You can sign up and login to experience the features of web app
 
 ## UI of The Application
 
