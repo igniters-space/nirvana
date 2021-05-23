@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import JarOfEmotions from './pages/JarOfEmotions'
 import { getUserData, useAuth } from './state/authState'
 
 import Form from './components/Form.js'
@@ -117,6 +118,8 @@ const App = () => {
             /> 
           </Route>
           </div>
+          <Route path="/main" component={JarOfEmotions} />
+        </div>
       </Switch>
     </BrowserRouter>
     

@@ -1,8 +1,13 @@
 .navbar {
   width: 100%;
   height: 7vh;
+<<<<<<< HEAD
   color:#F1FAEE;
   background-color: blue;
+=======
+  background-color: #1D3557;
+  color: #F1FAEE;
+>>>>>>> d9c7c44f5cc4f21c0d479a01b92edb303a2c5294
 }
 
 .navbar__container {
@@ -12,23 +17,34 @@
   align-items: center;
   justify-content: space-between;
   margin: auto;
+  background-color: #1D3557;
 }
 
 .navbar__container > h1 {
   cursor: pointer;
+  background-color: #1D3557;
+  color: #F1FAEE;
 }
 
 .navbar__links {
   display: flex;
   list-style-type: none;
+  background-color: #1D3557;
+  color: #F1FAEE;
 }
 .navbar__link {
   cursor: pointer;
   padding: 0.5rem 0.75rem;
   margin-right: 0.5rem;
   border-radius: 5px;
+  background-color: #1D3557;
+  color: #F1FAEE;
 }
 
 .navbar__link:hover {
-  background-color: rgb(235, 235, 235);
+  color: #A8DADC;
+}
+
+.navbar__container > h1:hover{
+   color: #A8DADC;
 }
