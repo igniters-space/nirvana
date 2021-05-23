@@ -36,14 +36,12 @@ const NoteModal = ({ Title, titlePH, descriptionPH }) => {
       >
         <h2>{Title}</h2>
 
-        <div></div>
         <form>
           <input type="text" placeholder={titlePH} />
           <br />
           <textarea type="text" placeholder={descriptionPH} />
           <br />
           <button onClick={addNote}>Add</button>
-
           <button onClick={closeModal}>close</button>
         </form>
       </Modal>
