@@ -230,10 +230,11 @@ We would like to upgrade the to-do app and implement Eisenhower Matrix to boost 
 
 ## Contributors
 
-- [Divya Sri Darimisetti][divya]
 - [Rupesh Darimisetti][rupesh]
-- [Chouhan Sairaj][sairaj]
+- [Divya Sri Darimisetti][divya]
+- [Sairaj Chouhan][sairaj]
 
-[divya]: https://github.com/irsayvid
 [rupesh]: https://github.com/Rupesh-Darimisetti
+[divya]: https://github.com/irsayvid
 [sairaj]: https://github.com/sairaj2119
+
