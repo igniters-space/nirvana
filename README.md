@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# nirvana
+=======
 # Nirvana
 A gateway to happiness
 ## About Nirvana
@@ -51,3 +54,4 @@ We would like to upgrade the to-do app and implement Eisenhower Matrix to boost 
 [Divya]: https://github.com/irsayvid
 [Rupesh]: https://github.com/Rupesh-Darimisetti
 [sairaj]: https://github.com/sairaj2119
+>>>>>>> 162b1d6c3341e7fe5e644c0b0d83df7d9b8f3ea3
