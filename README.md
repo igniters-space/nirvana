@@ -1,6 +1,6 @@
 # Nirvana
 
-A gateway to happiness
+Your gateway to happiness
 
 <img src="client/public/home-cropped.png" alt="logo">
 
@@ -220,6 +220,9 @@ yarn start
 7. You can sign up and login to experience the features of web app
 
 ## UI of The Application
+
+### Home Page
+<img src="client/public/home.png" alt="home"/>
 
 ## Future Plans
 
