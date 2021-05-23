@@ -34,6 +34,13 @@ const NavBar = () => {
               </li>
               <li
                 className="navbar__link"
+                onClick={() => history.push('/main')}
+                Jars
+              >
+                Jars
+              </li>
+              <li
+                className="navbar__link"
                 onClick={() => history.push('/todos')}
               >
                 Todos
