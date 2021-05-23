@@ -73,3 +73,9 @@
 .todoForm__container .todoForm__submit > button:hover {
   background-color: rgb(36, 36, 118);
 }
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
