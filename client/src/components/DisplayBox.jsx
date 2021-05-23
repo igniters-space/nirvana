@@ -4,7 +4,7 @@ const DisplayBox = ({ imgSrc, imgOrder, content, contentOrder }) => {
   return (
     <div>
       <img src={imgSrc} className={imgOrder} alt="sunflower" />
-      <p className={contentOrder}>{content}</p>
+      <p className={contentOrder}>{JSON.stringify(content)}</p>
     </div>
   )
 }

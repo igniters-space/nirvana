@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Modal from 'react-modal'
+import axe from '../utils/api'
 
 const customStyles = {
   content: {
@@ -12,17 +13,24 @@ const customStyles = {
   },
 }
 
-const NoteModal = ({ Title, titlePH, descriptionPH }) => {
+const NoteModal = ({ Title, titlePH, descriptionPH, type }) => {
   const [showModal, setshowModal] = React.useState(false)
+  const titleR = useRef()
+  const descR = useRef()
   function openModal() {
     setshowModal(true)
   }
 
-  function closeModal() {
+  function closeModal(e) {
     setshowModal(false)
   }
-  function addNote() {
-    // integration or backend code for adding to specific database
+  async function addNote(e) {
+    e.preventDefault()
+    await axe.post(`/jars/${type}`, {
+      title: titleR.current.value,
+      description: descR.current.value,
+    })
+    closeModal()
   }
 
   return (
@@ -37,9 +45,9 @@ const NoteModal = ({ Title, titlePH, descriptionPH }) => {
         <h2>{Title}</h2>
 
         <form>
-          <input type="text" placeholder={titlePH} />
+          <input ref={titleR} type="text" placeholder={titlePH} />
           <br />
-          <textarea type="text" placeholder={descriptionPH} />
+          <textarea ref={descR} type="text" placeholder={descriptionPH} />
           <br />
           <button onClick={addNote}>Add</button>
           <button onClick={closeModal}>close</button>
