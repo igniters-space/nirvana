@@ -13,7 +13,7 @@ const customStyles = {
   }
 };
 
-const NoteModal = () => {
+const NoteModal = ({Title, titlePH, descriptionPH}) => {
   var subtitle;
   const [showModal,setshowModal] = React.useState(false);
   function openModal() {
@@ -24,6 +24,10 @@ const NoteModal = () => {
   function closeModal(){
     setshowModal(false);
   }
+  function addNote()
+  {
+    // integration or backend code for adding to specific database
+  };
 
     return (
       <div>
@@ -35,12 +39,15 @@ const NoteModal = () => {
           contentLabel="Example Modal"
         >
 
-          <h2>Title of Modal</h2>
+          <h2>{Title}</h2>
           
-          <div>I am a modal</div>
+          <div></div>
           <form>
-            <input placeholder="title"/>
-            <input placeholder="description"/>
+            <input type="text" placeholder={titlePH}/>
+            <br/>
+            <textarea type="text" placeholder={descriptionPH}/>
+            <br/>
+            <button onClick={addNote}>Add</button>
             <button onClick={closeModal}>close</button>
           </form>
         </Modal>
