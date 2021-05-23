@@ -39,12 +39,10 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <div style={{ width: '80%', margin: '1rem auto 0 auto' }}>
-          <Route exact path="/" component={Home} />
-          <Route path="/signup" component={SignUp} />
-          <Route path="/login" component={Login} />
-          <Route path="/main" component={JarOfEmotions} />
-        </div>
+        <Route exact path="/" component={Home} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/login" component={Login} />
+        <Route path="/main" component={JarOfEmotions} />
       </Switch>
     </BrowserRouter>
   )

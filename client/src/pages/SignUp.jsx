@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
+import '../styles/Form.css'
 import { useAuth } from '../state/authState'
 
 const SignUp = () => {
@@ -44,33 +45,44 @@ const SignUp = () => {
   if (isLoading) return <h1>Loading...</h1>
 
   return (
-    <div>
+    <div className="form__container">
       <form onSubmit={handleSignUp}>
-        <label htmlFor="username">Username</label>
-        <input
-          type="text"
-          id="username"
-          value={data.username}
-          onChange={handleChange}
-          name="username"
-        />
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          value={data.email}
-          onChange={handleChange}
-          name="email"
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          value={data.password}
-          onChange={handleChange}
-          name="password"
-        />
-        <button>Submit</button>
+        <div className="form__group">
+          <label htmlFor="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            value={data.username}
+            onChange={handleChange}
+            name="username"
+            placeholder="Jhon Doe"
+          />
+        </div>
+        <div className="form__group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={data.email}
+            onChange={handleChange}
+            name="email"
+            placeholder="jhondoe@gmail.com"
+          />
+        </div>
+        <div className="form__group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            value={data.password}
+            onChange={handleChange}
+            name="password"
+            placeholder="password"
+          />
+        </div>
+        <div className="form__submit">
+          <button>SignUp</button>
+        </div>
       </form>
     </div>
   )

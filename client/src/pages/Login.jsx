@@ -43,25 +43,33 @@ const Login = () => {
   if (isLoading) return <h1>Loading...</h1>
 
   return (
-    <div>
+    <div className="form__container">
       <form onSubmit={handleLogin}>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={data.email}
-          onChange={handleChange}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={data.password}
-          onChange={handleChange}
-        />
-        <button>Submit</button>
+        <div className="form__group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={data.email}
+            onChange={handleChange}
+            name="email"
+            placeholder="jhondoe@gmail.com"
+          />
+        </div>
+        <div className="form__group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            value={data.password}
+            onChange={handleChange}
+            name="password"
+            placeholder="password"
+          />
+        </div>
+        <div className="form__submit">
+          <button>Login</button>
+        </div>
       </form>
     </div>
   )
