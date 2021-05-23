@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-// import './App.css'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Login from './pages/Login'

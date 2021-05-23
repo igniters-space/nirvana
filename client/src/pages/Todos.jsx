@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import axe from '../utils/api'
 import '../styles/Todos.css'
 import { useAuth } from '../state/authState'
+import Card from '../components/Card'
 
 const Todos = () => {
   const history = useHistory()
@@ -91,15 +92,25 @@ const Todos = () => {
         </div>
       </div>
       <div className="todo__right">
-        <h1>Your Todos</h1>
-        <div>
-          {todos.length > 0 &&
-            todos.map((todo) => (
-              <div>
-                <h3>{todo.text}</h3>
-                <p>{todo.description}</p>
-              </div>
-            ))}
+        {todos.length > 0 && <h1>Your Todos</h1>}
+        <div className="cards__container">
+          {todos.length > 0 ? (
+            todos.map((todo) => <Card key={todo.id} todo={todo} />)
+          ) : (
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <h1 style={{ fontSize: '5rem', color: '#1d3557' }}>No ToDos</h1>
+              <h4 style={{ fontSize: '3rem', marginTop: '2rem' }}>
+                Click on Add Todo to add a few :)
+              </h4>
+            </div>
+          )}
         </div>
       </div>
     </div>
