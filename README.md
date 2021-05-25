@@ -1,6 +1,6 @@
 # Nirvana
 
-Your gateway to happiness
+
 
 <img src="client/public/home-cropped.png" alt="logo">
 
@@ -40,7 +40,7 @@ Your gateway to happiness
        apt-get install git
        ```
       *  For Ubuntu, this PPA provides the latest stable upstream Git version
-      ```sh
+      ```shell
       add-apt-repository ppa:git-core/ppa 
       apt update; apt install git
       ```
@@ -194,7 +194,7 @@ git clone https://github.com/irsayvid/nirvana.git
 ```
 2. Go to project folder by pressing following commands in terminal or shell
 ```sh
-~/Desktop
+cd ~/Desktop
 cd nirvana
 ```
 3. Open the project in Visual Studio or any editor of your choice
@@ -223,6 +223,7 @@ yarn start
 
 ### Home Page
 <img src="client/public/home.png" alt="home"/>
+
 
 ## Future Plans
 
